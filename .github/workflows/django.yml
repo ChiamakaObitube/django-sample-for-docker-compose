@@ -16,9 +16,11 @@ jobs:
         python-version: [3.7, 3.8, 3.9]
 
     steps:
-    - uses: actions/checkout@v2
-      uses: nyakaz73/heroku-django-deploy@v0.68 
-      with:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy django to heroku
+        uses: nyakaz73/heroku-django-deploy@v0.68 
+        with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "scacloudschool-django"
           heroku_email: "obitubechiamaka@gmail.com"
