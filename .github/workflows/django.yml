@@ -27,7 +27,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "scacloudschool-django"
-          heroku_email: "obitubechiamaka@gmail.com"
+          heroku_email_address: "obitubechiamaka@gmail.com"
           use_docker: true
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
