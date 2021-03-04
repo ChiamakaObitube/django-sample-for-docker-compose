@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
-port = int(os.environ.get(“PORT”, 8000))
+
 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangosample.settings")
